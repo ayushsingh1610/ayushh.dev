@@ -1,4 +1,18 @@
 body{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    text-align: center;
+    font-weight: 100;
+    font-size: 8px;
+}
+#heroSection{
+    width: 1440px;
+    height: 720px;
+    max-width: 1280px;
+    max-height: 720px;
+
+    text-align: center;
 }
