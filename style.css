@@ -1,18 +1,189 @@
 body{
-    color: black;
-    background-color: lightcyan;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: #252422;
+    font-family: monospace;
 }
+.navdiv{
+    margin: 10px 35px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-div{
+    font-size: 1.5em;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.nav-link:hover{
+    color: black;
+    background-color: white;
+}
+
+#Section1{
+    width: auto;
+}
+.heroSection{
+    margin: 50px 0px 100px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero-element{
+    margin: 10px;
+    padding: 10px;
+}
+
+.intro{
+    align-self: self-start;
+    font-size: 120%;
+}
+
+.intro-text{
+    width: 400px;
+    height: auto;
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
+    /* font-style: italic; */
+    /* font-family: cursive; */
+}
+
+.intro-image{
+    background-image: url("img/ayushsingh-removebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+}
+
+.Section2{
+    background-color: #EB5E28;
+    align-content: center;
+}
+
+.skill-box-parent{
+    /* height: 720px; */
+    margin: 0px 50px 100px;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill-box{
+    margin: 50px 0px 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#skill1, #skill2, #skill3{
+    color: #ccc5b9;
+    font-size: 18px;
+    background-color: #252422;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px 40px;
+    align-content: center;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+#skill1:hover,  #skill2:hover, #skill3:hover{
+    color: black;
+    background-color: #ccc5b9;
+}
+
+.about-section{
+    /* border: 2px solid lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-box{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 100px 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+    padding: 30px;
+    /* border: 1px solid white; */
+    border-radius: 200px;
+    background-color: #FFFCF2;
+    /* z-index: 2; */
+}
+
+#about-element{
+    margin: 30px 0px;
+}
+
+.link-box{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box > li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.about-link-list{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 35px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.about-link-list:hover,:visited{
+    background-color: transparent;
+}
+
 footer{
+    margin: 50px 20px 10px;
+    width: 100vw;
+    bottom: 10px;
     text-align: center;
     font-weight: 100;
     font-size: 8px;
-}
-#heroSection{
-    width: 1440px;
-    height: 720px;
-    max-width: 1280px;
-    max-height: 720px;
-
-    text-align: center;
 }
