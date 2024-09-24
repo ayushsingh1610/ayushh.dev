@@ -1,15 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    max-width: auto;
+    box-sizing: border-box;
+}
 body{
+    margin:0;
     font-size: 20px;
     color: white;
     background-color: #252422;
     font-family: monospace;
 }
 .navdiv{
-    margin: 10px 35px;
-    padding: 10px;
-    font-size: large;
-    font-weight: 300;
+    margin: 20px;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
@@ -27,7 +33,7 @@ body{
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    margin-right: 15px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -43,6 +49,7 @@ body{
     margin: 50px 0px 100px;
     padding: 50px 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -50,6 +57,7 @@ body{
 #hero-element{
     margin: 10px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .intro{
@@ -67,6 +75,8 @@ body{
 }
 
 .intro-image{
+    display: flex;
+    flex-wrap: wrap;
     background-image: url("img/ayushsingh-removebg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,6 +85,7 @@ body{
 }
 
 .Section2{
+    width: auto;
     background-color: #EB5E28;
     align-content: center;
 }
@@ -92,6 +103,7 @@ body{
     margin: 50px 0px 0px;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -105,8 +117,8 @@ body{
     border-radius: 10px;
     width: 300px;
     height: 300px;
-    margin: 0px;
-    padding: 0px 40px;
+    margin: 20px;
+    padding: 10px 40px;
     align-content: center;
     text-align: justify;
     box-sizing: border-box;
@@ -124,7 +136,7 @@ body{
     align-items: center;
 }
 .about-box{
-    width: 100%;
+    width: auto;
     /* border: 1px solid red; */
     margin: 100px 20px;
     padding: 50px;
@@ -147,7 +159,8 @@ body{
 }
 
 .link-box{
-    width: 60%;
+    width: 70vw;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -167,10 +180,11 @@ body{
 }
 
 .about-link-list{
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    border-radius: 35px;
+    width: 45px;
+    height: 45px;
+    padding: 4px;
+    margin: 5%;
+    border-radius: 45px;
     background-color: white;
     border: 1px solid white;
 }
@@ -181,9 +195,48 @@ body{
 
 footer{
     margin: 50px 20px 10px;
-    width: 100vw;
+    width: auto;
     bottom: 10px;
     text-align: center;
     font-weight: 100;
     font-size: 8px;
 }
+
+@media (min-width:412px) and (max-width: 992px){
+    .heroSection{
+        flex-direction: column;
+    }
+
+    .intro-image{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+.contact-Section{
+    width: 100%;
+    height: auto;
+}
+
+.contactBox{
+    height: auto;
+    margin: 100px;
+    padding: 100px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-div-element{
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+#contact-div-input{
+    background-color: #252422;
+}
+
